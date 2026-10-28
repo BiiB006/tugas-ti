@@ -1,0 +1,116 @@
+/* Pengaturan dasar untuk seluruh halaman */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Header: Flexbox membuat logo di kiri dan menu di kanan */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: 15px 30px;
+    background-color: #0f172a;
+}
+
+header h2 {
+    margin: 0;
+    color: white;
+}
+
+/* Navbar: Link menu berjajar ke samping */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* ISI UTAMA: dibatasi lebarnya dan diberi jarak */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* GRID: kartu otomatis menyesuaikan jumlah kolom */
+.daftar-kartu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(240px, 1fr));
+    gap: 20px;
+}
+
+.kartu {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px  8px rgba(0, 0, 0.1);
+}
+
+/* ASIDE: kotak info tambahan */
+aside {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #dbeafe;
+    border-left: 5px solid #2563eb;
+    border-radius: 10px;
+}
+
+/* FOOTER: Flexbox teks di kiri dan link di kanan */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+    background-color: #0f172a;
+    color: #cbd5e1;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #93c5fd;
+}
+
+/* FORM: Merapikan kolom isian */
+form {
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 25px;
+    font-size: 16px;
+    color: white;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}

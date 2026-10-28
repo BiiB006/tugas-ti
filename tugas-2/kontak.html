@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id"
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Portal Mahasiswa</h2>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Form Kontak dan Saran</h1>
+
+        <form action="#" method="post">
+
+            <p>
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required minlength="3">    
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="telepon">Nomor telepon:</label>
+                <input type="tel" id="telepon" name="telepon" pattern="[0-9]{10-13}" title="isi 10 sampai 13 angka">
+            </p>
+            
+            <p>
+                <label for="tanggal">Tanggal lahir:</label>
+                <input type="date" id="tanggal" name="tanggal">
+            </p>
+
+            <p>
+                <label for="semester">Semester</label><br>
+                <input type="number" id="semester" name="semester" min="1" max="14"
+            </p>
+
+            <p>
+                <label for="topik">Topik:</label><br>
+                <select id="topik" name="topik" required>
+                    <option value="">Pilih topik</option>
+                    <option value="saran">Saran</option>
+                    <option value="pertanyaan">Pertanyaan</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan" rows="4" required maxlength="10"></textarea>
+            </p>
+
+            <button type="submit">Kirim</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Hak cipta 2026, Habibi</p>
+        <a href="index.html">Kembali ke Beranda</a>
+    </footer>
+</body>
+</html>
